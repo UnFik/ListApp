@@ -47,7 +47,10 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
                 ) {
-                    LazyVerticalGridDemo()
+                    Column {
+                        HeaderTitle(title = "Aplikasi List Mata Kuliah")
+                        LazyVerticalGridDemo()
+                    }
                 }
             }
         }
